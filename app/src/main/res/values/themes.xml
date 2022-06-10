@@ -13,7 +13,7 @@
 
 
     <style name="Splashscreen" parent="Theme.TwitterMirroring">
-
+        <item name="android:windowBackground">@drawable/splashscreen</item>
     </style>
 
 </resources>

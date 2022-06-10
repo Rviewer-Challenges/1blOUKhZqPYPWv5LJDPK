@@ -3,4 +3,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="txt_Followers">Seguidores</string>
+    <string name="txt_following">Siguiendo</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
