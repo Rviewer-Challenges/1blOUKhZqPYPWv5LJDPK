@@ -16,16 +16,28 @@
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable-v24/ic_retweet_twitter.xml" value="0.14" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable-v24/ic_search_twitter.xml" value="0.1" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable-v24/ic_twitter.xml" value="0.1" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_baseline_light_mode.xml" value="0.2595" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_bookmark_twitter.xml" value="0.1" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_bookmarks_twitter.xml" value="0.1" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1605" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1605" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_home_twitter_filled.xml" value="0.14" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1605" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_lists_twitter.xml" value="0.1" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_male_avatar.xml" value="0.1035" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_moments_twitter.xml" value="0.1" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1605" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_profile_twitter.xml" value="0.1" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_topics_twitter.xml" value="0.1" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_verified_account_twitter.xml" value="0.14" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/splashscreen.xml" value="0.14" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/drawer_layout_view.xml" value="0.264" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/fragment_dashboard.xml" value="0.2578125" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/fragment_home.xml" value="0.4" />
-        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/item_tweet.xml" value="0.536" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/item_tweet.xml" value="0.4" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14" />
       </map>

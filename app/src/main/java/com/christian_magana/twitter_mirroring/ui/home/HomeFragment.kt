@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.christian_magana.twitter_mirroring.TweetsProvider
 import com.christian_magana.twitter_mirroring.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -32,7 +33,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupRV() {
-        adapter = TweetsAdapter(listOf("df","dsf"))
+        adapter = TweetsAdapter(TweetsProvider.listTweets)
         binding.list.adapter = adapter
         binding.list.layoutManager = LinearLayoutManager(requireContext())
     }
