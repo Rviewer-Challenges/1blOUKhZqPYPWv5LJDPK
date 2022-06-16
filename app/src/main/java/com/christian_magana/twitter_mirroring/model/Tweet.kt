@@ -2,6 +2,7 @@ package com.christian_magana.twitter_mirroring.model
 
 import android.graphics.drawable.Drawable
 
+
 data class Tweet(
      val imageProfile: Int,
      val name: String,

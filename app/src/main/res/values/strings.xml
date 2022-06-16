@@ -8,4 +8,9 @@
 
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_lists">Listas</string>
+    <string name="menu_topics">Temas</string>
+    <string name="menu_bookmarks">Guardados</string>
+    <string name="menu_moments">Momentos</string>
 </resources>

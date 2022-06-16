@@ -6,4 +6,8 @@
     <color name="smoke">#F7F9F9</color>
     <color name="gainsboro">#929292</color>
     <color name="black">#0F1419</color>
+    <color name="lines_color">#32000000</color>
+
+    <color name="like_color">#F92083</color>
+    <color name="retwet_color">#19c289</color>
 </resources>
