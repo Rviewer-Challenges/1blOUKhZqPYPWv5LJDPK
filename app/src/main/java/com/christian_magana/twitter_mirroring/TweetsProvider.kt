@@ -5,42 +5,70 @@ import com.christian_magana.twitter_mirroring.model.Tweet
 object TweetsProvider {
 
     val listTweets: ArrayList<Tweet> = arrayListOf(
-        Tweet(R.drawable.ic_female_avatar,"Christian Magaña", "@_chrismg_", false, "HOLA MUNDO :)", "· 2h", null, 2, 3, 0),
         Tweet(
-            R.drawable.ic_male_avatar,
-            "Brais Moure",
-            "@MoureDev",
+            R.drawable.musk,
+            "Elon Musk",
+            "@elonmusk",
             true,
-            "Vamos a crear una splash screen en Android Studio utilizando Jetpack Compose y Kotlin.",
-            "· 3 jun.",
-            arrayListOf(
-                R.drawable.ic_home_twitter
-            ),
-            79,
+            "Humor is one of the great joys of life!",
+            "· 11 jun.",
+            null,
+            2,
             3,
-            22
+            0
         ),
         Tweet(
-            R.drawable.ic_male_avatar,
-            "Brais Moure",
-            "@MoureDev",
+            R.drawable.redbull,
+            "Oracle Red Bull Racing",
+            "@redbullracing",
             true,
-            "\uD83D\uDCF2 Creado por Google en 2011, Dart ha ganado gran popularidad desde la aparición en 2017 de Flutter, el SDK de desarrollo de aplicaciones multiplataforma para iOS y Android (y también Webs, apps de escritorio y juegos).\n" +
+            "Superhombre! \uD83E\uDDB8\uD83C\uDFFB\u200D♂️",
+            "· 31 may.",
+            arrayListOf(
+                R.drawable.superhombre
+            ),
+            19,
+            60,
+            815
+        ),
+        Tweet(
+            imageProfile = R.drawable.mouredev,
+            name = "Brais Moure",
+            userName = "@MoureDev",
+            verified = true,
+            text = "Wow! Hoy hemos revisado el directo el reto de programación mensual \uD83D\uDE0D\n" +
                     "\n" +
-                    "▶️ Te lo explico en vídeo:\n" +
-                    "https://youtu.be/W-AwQpWM4f0",
-            "· 2h",
-            arrayListOf(
-                R.drawable.ic_home_twitter,
-                R.drawable.ic_home_twitter,
-                R.drawable.ic_home_twitter,
-                R.drawable.ic_home_twitter
+                    "Teníamos que crear un \"juego de memoria\"... Pues hemos creado 22!\n" +
+                    "\n" +
+                    "Los tienes todos en GitHub:\n" +
+                    "https://github.com/mouredev/Monthly-App-Challenge-2022/blob/main/SolucionesReto05.md\n" +
+                    "\n" +
+                    "Mil gracias por participar! \n" +
+                    "Preparad@s para el reto de Junio? YA ESTÁ DISPONIBLE!!!",
+            time = "· 31 may.",
+            images = arrayListOf(
+                R.drawable.memory1,
+                R.drawable.memory_2,
+                R.drawable.memory3,
+                R.drawable.memory4
             ),
-            48,
-            3,
-            6
+            likes = 48,
+            comments = 3,
+            retweets = 6
         ),
-
+        Tweet(
+            R.drawable.me,
+            "Christian Magaña",
+            "@_chrismagaa_",
+            false,
+            ":) #dev #android",
+            "· 10 jun.",
+            arrayListOf(R.drawable.fire),
+            234,
+            100,
+            234
         )
+    )
+
 
 }

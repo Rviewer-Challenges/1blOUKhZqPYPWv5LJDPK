@@ -2,10 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerTweet"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_bottom_line"
-    android:padding="20dp">
+    android:padding="10dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -46,6 +47,7 @@
         android:maxEms="5"
         android:singleLine="true"
         android:text="@chris"
+        android:textSize="15sp"
         app:autoSizeTextType="none"
         app:layout_constraintStart_toEndOf="@+id/ivVerified"
         app:layout_constraintTop_toTopOf="parent" />
@@ -69,6 +71,7 @@
         android:autoLink="web"
         android:text="sabe cuanto www.christian.com"
         android:textColor="?colorOnPrimary"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
@@ -81,17 +84,17 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/tvTime"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+        app:srcCompat="@drawable/ic_baseline_more_vert_24"
+        app:tint="?colorOnSecondary" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvImages"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="190dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:visibility="gone"
-        app:cardBackgroundColor="#EDEAEA"
-        app:cardCornerRadius="5dp"
+        app:cardCornerRadius="14dp"
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardView"
@@ -105,8 +108,8 @@
                 android:id="@+id/iv1"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
                 android:background="@color/blueDark"
                 app:layout_constraintBottom_toTopOf="@+id/iv3"
                 app:layout_constraintEnd_toStartOf="@+id/iv2"
@@ -119,9 +122,8 @@
                 android:id="@+id/iv2"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginStart="1dp"
-                android:layout_marginBottom="1dp"
-                android:background="#FFD600"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="2dp"
                 android:visibility="gone"
                 app:layout_constraintBottom_toTopOf="@+id/iv4"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -134,9 +136,8 @@
                 android:id="@+id/iv3"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="1dp"
-                android:background="#30FF4C"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/iv4"
@@ -149,9 +150,8 @@
                 android:id="@+id/iv4"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="1dp"
-                android:background="@color/design_default_color_error"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -163,12 +163,12 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/containerComments"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/containerRetwets"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/cvImages">
@@ -180,75 +180,76 @@
             android:layout_marginStart="5dp"
             android:lines="1"
             android:text="000"
-            android:textSize="14sp"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView10"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView10"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            app:tint="?colorOnSecondary"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_comment_twitter" />
+            app:srcCompat="@drawable/ic_comment_twitter"
+            app:tint="?colorOnSecondary" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+        android:id="@+id/containerRetwets"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/containerLikes"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/containerComments"
         app:layout_constraintTop_toBottomOf="@+id/cvImages">
 
         <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            app:tint="?colorOnSecondary"
+            android:id="@+id/ivRetwet"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_retweet_twitter" />
+            app:srcCompat="@drawable/ic_retweet_twitter"
+            app:tint="?colorOnSecondary" />
 
         <TextView
-            android:id="@+id/tvRetwetts"
+            android:id="@+id/tvRetwets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:lines="1"
             android:text="000"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintStart_toEndOf="@+id/ivRetwet"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
+        android:id="@+id/containerLikes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/containerShare"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toEndOf="@+id/containerRetwets"
         app:layout_constraintTop_toBottomOf="@+id/cvImages">
 
         <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            app:tint="?colorOnSecondary"
+            android:id="@+id/ivLikes"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_like_twitter_outline" />
+            app:srcCompat="@drawable/ic_like_twitter_outline"
+            app:tint="?colorOnSecondary" />
 
         <TextView
             android:id="@+id/tvLikes"
@@ -257,10 +258,34 @@
             android:layout_marginStart="5dp"
             android:lines="1"
             android:text="000"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintStart_toEndOf="@+id/ivLikes"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerShare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/containerLikes"
+        app:layout_constraintTop_toBottomOf="@+id/cvImages">
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_share_android"
+            app:tint="?colorOnSecondary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <TextView
         android:id="@+id/tvTime"
@@ -269,6 +294,7 @@
         android:layout_marginStart="4dp"
         android:lines="1"
         android:text="· 1h"
+        android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/tvUserName"
         app:layout_constraintTop_toTopOf="parent" />
 

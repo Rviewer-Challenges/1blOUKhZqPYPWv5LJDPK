@@ -8,12 +8,16 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="colorAccent">@color/blue</item>
         <item name="colorOnSecondary">@color/gainsboro</item>
+        <item name="colorSecondaryContainer">@color/lines_color</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
     </style>
 
 
     <style name="Splashscreen" parent="Theme.TwitterMirroring">
         <item name="android:windowBackground">@drawable/splashscreen</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/blue</item>
+        <item name='android:navigationBarColor'>@color/blue</item>
     </style>
 
 </resources>
