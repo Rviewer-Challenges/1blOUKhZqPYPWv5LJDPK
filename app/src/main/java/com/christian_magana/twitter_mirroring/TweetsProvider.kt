@@ -6,6 +6,7 @@ object TweetsProvider {
 
     val listTweets: ArrayList<Tweet> = arrayListOf(
         Tweet(
+            0,
             R.drawable.musk,
             "Elon Musk",
             "@elonmusk",
@@ -14,10 +15,13 @@ object TweetsProvider {
             "· 11 jun.",
             null,
             2,
-            3,
-            0
+            isLiked = false,
+            isRetweeted = false,
+            nQuoteTweets = 3,
+            nRetweets = 0,
         ),
         Tweet(
+            1,
             R.drawable.redbull,
             "Oracle Red Bull Racing",
             "@redbullracing",
@@ -29,9 +33,12 @@ object TweetsProvider {
             ),
             19,
             60,
-            815
+            815,
+            isLiked = true,
+            isRetweeted = true,
         ),
         Tweet(
+            2,
             imageProfile = R.drawable.mouredev,
             name = "Brais Moure",
             userName = "@MoureDev",
@@ -52,11 +59,14 @@ object TweetsProvider {
                 R.drawable.memory3,
                 R.drawable.memory4
             ),
-            likes = 48,
-            comments = 3,
-            retweets = 6
+            nLikes = 48,
+            isLiked = true,
+            isRetweeted = false,
+            nQuoteTweets = 3,
+            nRetweets = 6
         ),
         Tweet(
+            3,
             R.drawable.me,
             "Christian Magaña",
             "@_chrismagaa_",
@@ -66,7 +76,9 @@ object TweetsProvider {
             arrayListOf(R.drawable.fire),
             234,
             100,
-            234
+            234,
+            isLiked = false,
+            isRetweeted = false,
         )
     )
 

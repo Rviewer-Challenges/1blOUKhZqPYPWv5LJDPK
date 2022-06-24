@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.christian_magana.twitter_mirroring.R
 import com.christian_magana.twitter_mirroring.model.Tweet
 
-class TweetsAdapter(private var tweets: ArrayList<Tweet>):
+class TweetsAdapter(private var tweets: ArrayList<Tweet>, private val onClick: (idTweet: Long) -> Unit):
     RecyclerView.Adapter<TweetsHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TweetsHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -15,7 +15,7 @@ class TweetsAdapter(private var tweets: ArrayList<Tweet>):
 
     override fun onBindViewHolder(holder: TweetsHolder, position: Int) {
         val tweet = tweets[position]
-        holder.render(tweet)
+        holder.render(tweet, onClick)
     }
 
     override fun getItemCount(): Int = tweets.size

@@ -13,4 +13,5 @@
     <string name="menu_topics">Temas</string>
     <string name="menu_bookmarks">Guardados</string>
     <string name="menu_moments">Momentos</string>
+    <string name="title_Tweet">Tweet</string>
 </resources>
