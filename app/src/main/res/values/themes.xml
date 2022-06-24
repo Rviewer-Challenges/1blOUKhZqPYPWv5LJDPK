@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.TwitterMirroring" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.TwitterMirroring" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="colorPrimary">@color/blue</item>
         <item name="colorPrimaryDark">@color/smoke</item>
         <item name="colorOnPrimary">@color/black</item>
@@ -10,6 +10,9 @@
         <item name="colorOnSecondary">@color/gainsboro</item>
         <item name="colorSecondaryContainer">@color/lines_color</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name='android:navigationBarColor'>@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
     </style>
 
 

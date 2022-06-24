@@ -9,5 +9,5 @@
     <color name="lines_color">#32000000</color>
 
     <color name="like_color">#F92083</color>
-    <color name="retwet_color">#19c289</color>
+    <color name="retweet_color">#19c289</color>
 </resources>

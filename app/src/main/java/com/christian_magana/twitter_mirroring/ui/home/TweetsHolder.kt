@@ -17,7 +17,8 @@ import com.christian_magana.twitter_mirroring.model.Tweet
 class TweetsHolder(private val view:  View): RecyclerView.ViewHolder(view) {
     val binding = ItemTweetBinding.bind(view)
 
-    fun render(tweet: Tweet){
+    fun render(tweet: Tweet, onClick: (idTweet: Long) -> Unit) {
+        binding.containerTweet.setOnClickListener { onClick(tweet.id) }
         binding.ivProfile.setImageResource(tweet.imageProfile)
         binding.tvName.text = tweet.name
         binding.tvUserName.text = tweet.userName
@@ -31,12 +32,19 @@ class TweetsHolder(private val view:  View): RecyclerView.ViewHolder(view) {
             }
         }
 
-        binding.tvComments.text = tweet.comments.toString()
-        binding.tvRetwets.text = tweet.retweets.toString()
-        binding.tvLikes.text = tweet.likes.toString()
+        if(tweet.isLiked) {
+            binding.ivLikes.setImageResource(R.drawable.ic_liked_twitter)
+            binding.ivLikes.imageTintList = ColorStateList.valueOf(ContextCompat.getColor(view.context, R.color.like_color))
+            binding.tvLikes.setTextColor(ContextCompat.getColor(view.context, R.color.like_color))
+        }
+        if(tweet.isRetweeted){
+            binding.tvRetwets.setTextColor(ContextCompat.getColor(view.context, R.color.retweet_color))
+            binding.ivRetwet.imageTintList = ColorStateList.valueOf(ContextCompat.getColor(view.context, R.color.retweet_color))
+        }
 
-        initClicks()
-
+        binding.tvComments.text = tweet.nQuoteTweets.toString()
+        binding.tvRetwets.text = tweet.nRetweets.toString()
+        binding.tvLikes.text = tweet.nLikes.toString()
 
         tweet.images?.let {
             binding.cvImages.visibility = View.VISIBLE
@@ -60,18 +68,6 @@ class TweetsHolder(private val view:  View): RecyclerView.ViewHolder(view) {
 
     }
 
-    private fun initClicks() {
-
-        binding.containerLikes.setOnClickListener {
-            binding.ivLikes.imageTintList = ColorStateList.valueOf(ContextCompat.getColor(view.context, R.color.like_color))
-            binding.tvLikes.setTextColor(ContextCompat.getColor(view.context, R.color.like_color))
-        }
-
-        binding.containerRetwets.setOnClickListener {
-            binding.ivRetwet.imageTintList = ColorStateList.valueOf(ContextCompat.getColor(view.context, R.color.retwet_color))
-            binding.tvRetwets.setTextColor(ContextCompat.getColor(view.context, R.color.retwet_color))
-        }
-    }
 
     private fun findHashtags(text: String): SpannableStringBuilder  {
         val spannable = SpannableStringBuilder().append(text)

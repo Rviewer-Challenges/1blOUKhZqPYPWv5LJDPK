@@ -4,11 +4,12 @@
         <item name="colorPrimary">@color/blue</item>
         <item name="colorPrimaryDark">@color/black</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="backgroundColor">@color/white</item>
+        <item name="backgroundColor">@color/black</item>
         <item name="android:windowLightStatusBar">false</item>
-        <item name="colorAccent">@color/blue</item>
+        <item name="colorAccent">@color/white</item>
         <item name="colorOnSecondary">@color/smoke</item>
-        <item name="colorSecondaryContainer">@color/white</item>
+        <item name="colorSecondaryContainer">@color/gainsboro</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <item name='android:navigationBarColor'>@color/black</item>
     </style>
 </resources>
