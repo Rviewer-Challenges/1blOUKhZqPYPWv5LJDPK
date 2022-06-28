@@ -3,28 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_profile_twitter"
-            android:title="@string/menu_profile" />
-        <item
-            android:id="@+id/nav_lists"
-            android:icon="@drawable/ic_lists_twitter"
-            android:title="@string/menu_lists" />
-        <item
-            android:id="@+id/nav_topics"
-            android:icon="@drawable/ic_topics_twitter"
-            android:title="@string/menu_topics" />
-        <item
-            android:id="@+id/nav_bookmarks"
-            android:icon="@drawable/ic_bookmarks_twitter"
-            android:title="@string/menu_bookmarks" />
 
-        <item
-            android:id="@+id/nav_moments"
-            android:icon="@drawable/ic_moments_twitter"
-            android:title="@string/menu_moments" />
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_profile_twitter"
+                    android:title="@string/menu_profile" />
+                <item
+                    android:id="@+id/nav_lists"
+                    android:icon="@drawable/ic_lists_twitter"
+                    android:title="@string/menu_lists" />
+                <item
+                    android:id="@+id/nav_topics"
+                    android:icon="@drawable/ic_topics_twitter"
+                    android:title="@string/menu_topics" />
+                <item
+                    android:id="@+id/nav_bookmarks"
+                    android:icon="@drawable/ic_bookmarks_twitter"
+                    android:title="@string/menu_bookmarks" />
 
-    </group>
+                <item
+                    android:id="@+id/nav_moments"
+                    android:icon="@drawable/ic_moments_twitter"
+                    android:title="@string/menu_moments" />
+
+            </group>
+
 </menu>

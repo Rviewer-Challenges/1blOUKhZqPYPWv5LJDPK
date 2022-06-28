@@ -14,4 +14,8 @@
     <string name="menu_bookmarks">Guardados</string>
     <string name="menu_moments">Momentos</string>
     <string name="title_Tweet">Tweet</string>
+    <string name="txt_tweets_citados">Tweets citados</string>
+    <string name="txt_me_gusta">Me gusta</string>
+    <string name="txt_retweets">Retweets</string>
+    <string name="txt_twittea_tu_respuesta">Twittea tu respuesta</string>
 </resources>
