@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.christian_magana.twitter_mirroring.R
-import com.christian_magana.twitter_mirroring.model.Tweet
+import com.christian_magana.twitter_mirroring.data.Tweet
 
 class TweetsAdapter(private var tweets: ArrayList<Tweet>, private val onClick: (idTweet: Long) -> Unit):
     RecyclerView.Adapter<TweetsHolder>(){

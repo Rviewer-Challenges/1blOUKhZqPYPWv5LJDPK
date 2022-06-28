@@ -18,11 +18,13 @@
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable-v24/ic_twitter.xml" value="0.1" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.214" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_baseline_light_mode.xml" value="0.2595" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.191" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.169" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_bookmark_twitter.xml" value="0.1" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_bookmarks_twitter.xml" value="0.1" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_camera.xml" value="0.2595" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1605" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_female_avatar.xml" value="0.191" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1605" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_home_twitter_filled.xml" value="0.14" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1605" />
@@ -34,12 +36,13 @@
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1605" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_profile_twitter.xml" value="0.1" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_share.xml" value="0.2595" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_share_android.xml" value="0.191" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_topics_twitter.xml" value="0.1" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/ic_verified_account_twitter.xml" value="0.14" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/selected_background.xml" value="0.1745" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/drawable/splashscreen.xml" value="0.14" />
-        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/activity_details.xml" value="0.2" />
-        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/activity_details.xml" value="0.264" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/app_bar_main.xml" value="0.264" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/content_scroll.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/drawer_layout_view.xml" value="0.264" />
@@ -48,7 +51,7 @@
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/item_tweet.xml" value="0.4" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/layout/nav_header.xml" value="0.264" />
-        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
+        <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/menu/activity_main_drawer.xml" value="0.4" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/christian/AndroidStudioProjects/TwitterMirroring/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14" />
       </map>

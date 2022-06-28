@@ -11,26 +11,27 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.christian_magana.twitter_mirroring.R
 import com.christian_magana.twitter_mirroring.databinding.ItemTweetBinding
-import com.christian_magana.twitter_mirroring.model.Tweet
+import com.christian_magana.twitter_mirroring.data.Tweet
 
 
 class TweetsHolder(private val view:  View): RecyclerView.ViewHolder(view) {
-    val binding = ItemTweetBinding.bind(view)
+    private val binding = ItemTweetBinding.bind(view)
 
     fun render(tweet: Tweet, onClick: (idTweet: Long) -> Unit) {
         binding.containerTweet.setOnClickListener { onClick(tweet.id) }
         binding.ivProfile.setImageResource(tweet.imageProfile)
         binding.tvName.text = tweet.name
-        binding.tvUserName.text = tweet.userName
+        binding.tvUserName.text = tweet.nickName
         if(!tweet.verified) binding.ivVerified.visibility = View.GONE
-        binding.tvTime.text = tweet.time
+        binding.tvTime.text = tweet.datetime_simplified
 
         tweet.text?.let { tweetText ->
             binding.tvText.apply {
                 visibility = View.VISIBLE
-                setText(findHashtags(tweetText), TextView.BufferType.SPANNABLE)
+                setText(findHashtagsAndMentions(tweetText), TextView.BufferType.SPANNABLE)
             }
         }
+
 
         if(tweet.isLiked) {
             binding.ivLikes.setImageResource(R.drawable.ic_liked_twitter)
@@ -48,20 +49,24 @@ class TweetsHolder(private val view:  View): RecyclerView.ViewHolder(view) {
 
         tweet.images?.let {
             binding.cvImages.visibility = View.VISIBLE
-            Glide.with(view.context).load(it[0]).centerCrop().into(binding.iv1)
 
             if(it.size > 1){
+                binding.iv1.visibility = View.VISIBLE
+                Glide.with(view.context).load(it[0]).centerCrop().into(binding.iv1)
+
                 binding.iv2.visibility = View.VISIBLE
                 Glide.with(view.context).load(it[1]).centerCrop().into(binding.iv2)
-            }
-            if(it.size > 2){
+
                 binding.iv3.visibility = View.VISIBLE
                 Glide.with(view.context).load(it[2]).centerCrop().into(binding.iv3)
-            }
-            if(it.size > 3){
+
                 binding.iv4.visibility = View.VISIBLE
                 Glide.with(view.context).load(it[3]).centerCrop().into(binding.iv4)
+            }else{
+                binding.ivTweet.visibility = View.VISIBLE
+                Glide.with(view.context).load(it[0]).centerCrop().into(binding.ivTweet)
             }
+
         }
 
 
@@ -69,20 +74,24 @@ class TweetsHolder(private val view:  View): RecyclerView.ViewHolder(view) {
     }
 
 
-    private fun findHashtags(text: String): SpannableStringBuilder  {
-        val spannable = SpannableStringBuilder().append(text)
-        val hashTag = "#"
-        val espacio = " "
-
-        var index = text.indexOf(hashTag)
-        while(index != -1){
-            val indexFin = if(text.indexOf(espacio, index) == -1) text.length else text.indexOf(espacio, index)
-            spannable.setSpan(ForegroundColorSpan(ContextCompat.getColor(view.context, R.color.blue)), index, indexFin, Spannable.SPAN_EXCLUSIVE_INCLUSIVE)
-            index = text.indexOf(hashTag, index + 1)
+    private fun findHashtagsAndMentions(text: String): SpannableStringBuilder {
+        val spannable = SpannableStringBuilder(text)
+        val pattern = "(#[a-zA-Z0-9_]+)|(@[a-zA-Z0-9_]+)"
+        val regex = Regex(pattern)
+        val matches = regex.findAll(text)
+        matches.forEach {
+            val start = it.range.first
+            val end = it.range.last + 1
+            spannable.setSpan(ForegroundColorSpan(ContextCompat.getColor(view.context, R.color.blue)), start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         }
-
         return spannable
     }
+
+
+
+
+
+
 
 
 }
